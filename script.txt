@@ -1,0 +1,12 @@
+New-LocalUser -Name 'adminuser1' -Password $Password -PasswordNeverExpires
+$Password = Read-Host -AsSecureString
+Add-LocalGroupMember -Group "Administrators" -Member "adminuser1"
+
+Set-LocalUser -Name "adminuser1" –PasswordNeverExpires $true
+
+az keyvault secret set --name "" --vault-name "" --value ''
+az keyvault secret show --name "" --vault-name ""
+az keyvault secret list --vault-name "" | jq -r .[].name
+
+az vm start -g MyResourceGroup -n MyVm --no-wait
+az storage blob lease break --blob-name "" --container-name "" --sas-token "" --account-name ""

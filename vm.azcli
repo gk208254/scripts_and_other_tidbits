@@ -1,0 +1,12 @@
+az vm create --name "windows" --resource-group "${RESOURCE}" --admin-password "8UE1X{HEl5s8sE@@" --admin-username "adminuser" --size "Standard_DS2_v2" --image "MicrosoftWindowsDesktop:windows11preview:win11-24h2-pro:26100.863.240615" | grep 'publicIpAddress'
+az vm delete --resource-group "${RESOURCE}" --name "windows" --yes
+az vm show -n windows -g user-gmuvkjxozcme -d | grep -i 'public'
+
+az vm repair create -n "" -g "" --verbose
+az vm repair run --resource-group "" --name "" --run-id win-crowdstrike-fix-bootloop --run-on-repair --verbose
+az vm repair restore -n "" -g "" --verbose
+
+az vm update -g "" -n "" --os-disk ""
+az snapshot create -g "" -n "" --source ""
+
+az storage blob download --account-name '' --container-name '' --sas-token '' --name '' --file ''
