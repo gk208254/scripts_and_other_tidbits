@@ -1,0 +1,41 @@
+Myself Gaurav Kumar. I have experience of 4 years and 8 months. I have been working as Cloud Engineer at TCS. Before this organization I have worked in HCL. I am 2x Microsoft Certified Azure Administrator. I also have 3 associate level certs in AWS. and 2 certs in GitHub (GitHub foundations and GitHub actions). I am currently working on the Azure Cloud, handling both Windows and Linux operating systems.  I have been working with Terraform for infrastructure as code (IaC), managing our infrastructure codebase on GitHub, and deploying it via GitHub Actions CI/CD pipelines. Additionally, I have foundational knowledge of Docker and Kubernetes.
+
+So my day to day responsibilities includes the following:
+Provisioning Azure infrastructure, which involves configuring virtual networks (Vnets), subnets, network security groups (nsgs), route tables, virtual machines (VMs), storage accounts, key vaults, Azure firewalls, and network load balancer, application gateway and VPN gateways and other associated components.
+take care of patching our VMs through Azure update manager.
+#taking care of security posture of the infrastructure through the recommendation from azure defender from cloud.
+provisioning user in ad, local user in both windows and Linux for standalone server.
+taking care of network connectivity request between servers in intravnet and inter-Vnets.
+Granting developers access to the Azure environment, implementing that role-based access control (RBAC).
+Creating service principals and assigning the necessary permissions to those.
+Configuring, monitoring and troubleshooting the VM level backups for Azure VMs.
+Resizing VMs for performance and cost saving as per requirement with approvals.
+
+Developing and managing GitHub Actions (GHA) workflows.
+have helped teams to adopt GitHub Actions (GHA) workflows.
+As our codebase is hosted on GitHub:-
+I have experience in setting up branch protection rules, managing access permissions.
+Deploying and managing self hosted actions runner.
+
+Creating Bash/PowerShell Scripts to automate administrative tasks. 
+Performing certificate renewal tasks on the Azure Application Gateway, which we do infrequently.
+Configuring rules in azure firewalls per the requirements of the developers or vendor teams.
+Experience of ticketing software ServiceNow.
+I also have experience of working with JIRA for project management, issue tracking, task distribution.
+
+--------------------------------------
+create dev and test env for dev teams
+where we deploy vnets, subnets, vms, storage account, azure file shares, azure recovery service vaults, azure key vaults
+here we have hub vnet where firewall is deployed, tier zero (which we refer to as 
+
+So the project in which i was involved we deployed multi-env multi-tier application,
+where we deployed separate vnets for dev, test, uat and shared lower vnet (whatelse was there)?? for database and shared vms for lower environment
+we had shared
+
+shared higher
+tier0
+for directory services(AD)
+it was hub and spoke where shared was hub peered with all the spoke (firewall was deployed in this subnet)
+firewall -> internal application gateway ((
+we had vdi/remote desktop that we used VMware horizon that was deployed in the other
+integration of that with the existing infra
